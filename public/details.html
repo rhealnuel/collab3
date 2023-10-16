@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="payment" method="post" action="https://formspree.io/f/mknlkzkv">
+        <h1 class="payTitle">Personal Information</h1>
+        <label>Name and Surname</label>
+        <input type="text" placeholder="John Doe" class="payInput" id="name" name="name">
+        <label>Phone Number</label>
+        <input type="text" placeholder="+1 234 5678" class="payInput" id="number" name="number">
+        <label>Email</label>
+        <input type="email" placeholder="example@mail.com" class="payInput" id="email" name="email">
+        <label>Full Address</label>
+        <input type="text" placeholder="23, john street, london" class="payInput" id="address" name="address">
+        <label>Payment Method Used</label>
+        <input type="text" placeholder="Bitcoin or Cash App" class="payInput" id="payment" name="payment">
+        <label>Desired Shipping Date</label>
+        <input type="date" placeholder="20/12/2012" class="payInput" id="date" name="date">
+        
+        <input type="submit" name="submit" value="Send your Details" id="payButton"></input>
+        <span class="close"><a href="./index.html">X</a></span>
+    
+    </form>
+    <script src="../app.js"></script>
+</body>
+</html>

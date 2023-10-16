@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body >
+    <div  class="flex flex-col items-center justify-center h-[100vh] bg-gray-300">
+        <div id="bitcoin" class=" m-1 lg:m-0 md:m-0 h-fit w-fit lg:p-6 md:p-6 shadow-md  bg-gray-100 flex flex-col items-center">
+            <div class="flex gap-2 items-center pt-2 pb-2">
+                 <img src="../public/images/bitcoin1.png" alt="" class="w-[30px]">
+                 <p class="font-semibold text-[25px]">BITCOIN PAYMENT</p>
+            </div>
+            <div class="pt-4 pb-6 text-gray-400 pr-[1px] pl-[1px] lg:font-semibold text-center">
+                <p>To complete your payment, please send bitcoin<br> worth
+                    <span id="out1"></span> to the address below.
+                </p>
+            </div>
+            <div class="flex flex-col items-center h-fit w-fit bg-white justify-center text-center ">
+                <div class="pt-4 pb-4 pl-32 pr-32">
+                    <p class="text-[12px] font-semibold text-gray-400">AMOUNT</p>
+                    <p class="text-[40px] font-semibold" id="out1p">100</p>
+                </div>
+                <hr class="bg-gray-300 h-[2px] w-full">
+                <div class="p-4 gap-4 flex flex-col">
+                    <p class="text-[12px] font-semibold text-gray-400">ADDRESS</p>
+                    <div class="flex w-[300px] bg-gray-100 gap-2 border justify-center items-center">
+                        <img id="copybutton" src="./images/copy.png" alt="" class="h-[20px]">
+                        <p id="targetP" class="bg-gray-100 pt-2 pb-2">gggggggggggggggggggggggggggga</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="p-4 font-semibold text-center">OR</p>
+                <div>
+                    <button onclick="hidebitcoin()" class=" h-fit w-fit p-2 bg-green-400 text-white font-semibold rounded-md">Pay with Cash App</button>
+                </div>
+                
+            </div>
+            <a href="./confirm.html" class="font-semibold h-fit w-full pt-2 pb-2 text-white bg-[#0077ff] mt-6 text-center"><button >I Have Paid</button></a>
+        </div>
+
+
+                                <!--Cash App Payment-->
+
+        <div id="cashapp" class="overflow-hidden h-fit w-fit lg:p-6 md:p-6 shadow-md m-1 bg-gray-100 hidden flex-col items-center">
+            <div class="flex gap-1 items-center pt-2 pb-2 xs:m-4 ">
+                <img src="../public/images/Cashapp.png" alt="" class="w-[60px]">
+                <p class="font-semibold text-[25px]">CASH APP PAYMENT</p>
+            </div>
+            <div class="pt-4 pb-6 text-gray-400 font-semibold text-center">
+                <p>To complete your payment, please send
+                    <br> <span id="out2"></span> to the $CashTag below.
+                </p>
+            </div>
+            <div class="flex flex-col items-center h-fit w-fit bg-white justify-center text-center ">
+                <div class="pt-4 pb-4 pl-32 pr-32">
+                    <p class="text-[12px] font-semibold text-gray-400">AMOUNT</p>
+                    <p class="text-[40px] font-semibold" id="out2p">$ 100.00</p>
+                </div>
+                <hr class="bg-gray-300 h-[2px] w-full">
+                <div class="p-4 gap-4 flex flex-col">
+                    <p class="text-[12px] font-semibold text-gray-400">$CASHTAG</p>
+                    <div class="flex w-[300px] bg-gray-100 gap-8 border justify-center items-center">
+                        <img src="../public/images/copy.png" alt="" class="h-[20px]" id="copyicon">
+                        <p id="textcopy" class="bg-gray-100 pt-2 pb-2">rtfffffff</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="p-4 font-semibold text-center">OR</p>
+                <div>
+                    <button onclick="hidecashapp()" class=" h-fit w-fit p-2 bg-green-400 text-white font-semibold rounded-md">Pay with Bitcoin</button>
+                </div>
+        
+            </div>
+            <a href="./confirm.html" class="font-semibold h-fit w-full pt-2 pb-2 text-white bg-[#0077ff] mt-6 text-center"><button >I Have Paid</button></a>
+        </div>
+       
+    </div>
+    <script src="../public/app.js"></script>
+    <script src="../public/display.js"></script>
+    </body>
+    
+</html>
